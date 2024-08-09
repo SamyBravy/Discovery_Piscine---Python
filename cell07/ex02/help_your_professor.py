@@ -2,6 +2,8 @@
 
 def average(dictionary):
     sum = 0
+    if len(dictionary) == 0:
+    	return 0
     for key in dictionary:
         sum += dictionary[key]
     return sum / len(dictionary)
